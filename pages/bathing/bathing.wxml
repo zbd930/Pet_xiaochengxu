@@ -1,0 +1,105 @@
+<!--pages/bathing/bathing.wxml-->
+<view class='main'>
+  <view  class="contact_top">
+      <text>预约洗澡</text>
+    </view>
+     <view class='top'>
+        <image class='top'src='http://duogesi.cn:8080/pet/pics/bath.jpg'></image>
+    </view>
+    <view class='middle'>
+      <!-- 联系人 -->
+      <text class='title'>联系方式*</text>
+      <view class='biankuan '>
+            <view class='layout_horizontal'>
+                <image src='http://duogesi.cn:8080/pet/pics/contact.png'mode="widthFix">
+                  </image>
+                  <input name='contact_name' bindinput='contactNameInput'type="text" placeholder='联系人'>
+                  </input>
+            </view>
+          
+            <view class='layout_horizontal'>
+                <image src='http://duogesi.cn:8080/pet/pics/phone.png' mode="widthFix">
+                  </image>
+                  <input name='contact_phone' bindinput='contactphoneInput' maxlength="11" type="number"  placeholder='电话'>
+                  </input>
+            </view>
+      </view>
+      <!-- 选择地址 -->
+      <text class='title'>地址选项*</text>
+              <view class='biankuan '>
+                    <view class='layout_horizontal'>
+                        <image src='http://duogesi.cn:8080/pet/pics/adress.png'mode="widthFix">
+                          </image>
+                          <input name='contact_address' bindinput='contactaddressInput'type="text" value='{{contact_addree}}' placeholder='地址选择'>
+                          </input>
+                    </view>
+                      <view class='location' bindtap='location'>点击获取地址</view >
+              </view>
+      <!-- 选择爱宠 -->
+      <text class='title'>选择爱宠*</text>
+              <view class='biankuan '>
+                    <view class='layout_horizontal'>
+                        <view class="section">
+                            <picker bindchange="bindPickerChange_pet" value="{{index}}" range="{{category}}">
+                                <image src='http://duogesi.cn:8080/pet/pics/add.png'>
+                                </image>
+                            </picker>
+                          </view>
+                          <view class='dog2'>
+                                <image mode="widthFix" src='{{image_url}}'>
+                                </image>
+                                
+                          </view>
+                          <text class='nick '>{{dogName}}</text>
+                    </view>                  
+              </view>
+              <!-- 选择套餐 -->
+      <text class='title'>选择套餐*</text>
+              <view class='biankuan '>
+                  <text>套餐类型:</text>
+                      <radio-group class="radio-group" bindchange="radioChange">
+                          <label class="radio" wx:for="{{items}}" wx:key='item'>
+                            <radio value="{{item.name}}"/>
+                            {{item.value}}
+                          </label>
+                      </radio-group>
+                  <text class='price'>价格:{{price}}</text>
+              </view>
+              <!-- 选择时间 -->
+      <text class='title'>选择时间*</text>
+                <view class='biankuan '>
+                <view class='layout_horizontal'>
+                          <text>日期: </text>
+                      <picker
+                      id='picker'
+                        mode="date"
+                        value="{{date}}"
+                        start="2019-06-01"
+                        end="2019-11-01"
+                        bindchange="bindDateChange"
+                      >
+                        <view class="picker">
+                          {{date}}
+                        
+                        </view>
+                      </picker>
+                      <text class='bathing_xiala'>▼</text>
+              </view>
+            
+              <view class='layout_horizontal'>
+                  <text>时间：</text>
+                    <picker bindchange="bindPickerChange" value="{{time}}" range="{{array}}">
+                        <view class="picker">
+                          {{array[time]}}
+                        </view>
+                    </picker>
+                    <text class='bathing_xiala'>▼</text>
+              </view>
+              </view>
+              <button bindtap='sumbit'>提交</button>
+        </view>
+</view>
+        <text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+        

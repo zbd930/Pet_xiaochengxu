@@ -1,0 +1,75 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class='main' >
+    <view class="page-body-info layout_horizontal" bindtap='order'>
+          <image class="userinfo-avatar" src="{{employee.avatarUrl}}"></image>
+        <view class="user_name">
+          <text class="userinfo-nickname">{{employee.nickName}}</text>
+        </view>
+        <view class='dengji'>
+        <text>订单类型：</text>
+        <text>{{level}}</text>
+        </view>
+    </view>
+    <!-- 评论 -->
+    <view class='comments'>
+      <view>
+          <text>对于本次服务的体验</text>
+                    <radio-group class="radio-group" bindchange="radioChange">
+                                  <label class="radio" wx:for="{{options}}" wx:key='item'>
+                                    <radio value="{{item.name}}"/>
+                                    {{item.value}}
+                                  </label>
+                    </radio-group>
+      </view>
+      <!-- 一个触发底部弹框的元素 -->
+    <botton bindtap="showModel" class='xingjipingjia'>星级评价</botton>
+    </view>
+    <!-- 渐深的背景层 -->
+    <view class='{{bg}}' style="visibility:{{backgroundVisible ? 'visible':'hidden'}}"></view>
+    <!-- 底部弹出层 -->
+    <view class="element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}">
+        <view class="element">
+                    <view class='picker_header'>
+                        <text class="left-bt" catchtap="hidden" >取消</text>
+                        <text class="right-bt" catchtap="hidden">确定</text>
+                    </view>
+            <!-- 星星 -->
+                    <view class='block'>
+                        <block wx:for="{{one_2}}" wx:key="index" >
+                              <image class='image'catchtap='in_xin' id='{{index+1}}' data-in='star' src='http://duogesi.cn:8080/pet/pics/star-active.png'></image>
+                          </block>
+                          <block wx:for="{{two_2}}" wx:key="index">
+                              <image class='image' catchtap='in_xin' id='{{index+1}}' data-in='starg' src='http://duogesi.cn:8080/pet/pics/star.png'></image>
+                          </block>
+                        <view>{{sentence}}</view>
+                    </view>
+              <!-- 选项 -->  
+                  <view wx:if="{{one_2 <= 4}}">
+                        <view wx:for="{{items}}" wx:key= "*this" data-id="{{index}}" class="my_comments checkbox {{item.checked?'checkedActive':''}}" bindtap='userCheck'>
+                          {{item.value}}
+                        </view>
+                  </view>
+                  <view  wx:elif="{{one_2 == 5}}">
+                      <view wx:for="{{items1}}" wx:key= "*this" data-id="{{index}}" class="my_comments checkbox {{item.checked?'checkedActive':''}}" bindtap='select_use'>
+                          {{item.value}}
+                      </view>
+                      
+              
+                  </view>
+            
+                  <button bindtap='submit' class='tijiao'>提交 </button>
+                    
+                </view>
+            </view>
+    <view class='comments_2 layout_horizontal'>
+        <view>分享优惠卷
+        </view>
+        <view>客服投诉
+        </view>
+    </view>
+</view>
+<text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+
+

@@ -1,0 +1,54 @@
+<!--pages/mine/mine.wxml-->
+<view class='main'>
+    <view class="page-body-info layout_horizontal" bindtap='order'>
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user_name">
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+        <view class='dengji'>
+        <text>会员等级：</text>
+        <text>{{level}}</text>
+        </view>
+    </view>
+    <!-- 我的订单 -->
+    <view class='layout_horizontal options'>
+      <!-- <block   wx:for="{{xiangmu}}" wx:key="{{image_url}}" > -->
+        <view class='layout_vertical' bindtap="jump"  wx:for="{{xiangmu}}" wx:key="{{image_url}}" data-id='{{item.number}}'>
+          <image src='{{item.image_url}}'>
+          </image>
+          <text>{{item.text}}
+          </text>
+        </view>
+      <!-- </block> -->
+    </view>
+    <!-- 我的优惠卷 -->
+    <view class='mine_mune'>
+      <view class='my_order'>
+      <text>我的优惠卷</text>
+      </view>
+    </view>
+    <view class='layout_horizontal add_address'>
+        <image></image>
+        <text></text>
+    </view>
+
+    <view class='layout_horizontal  my'> 
+      <view class='section' bindtap='yijian'>
+        <text>意见和反馈</text>
+      </view>
+      <view class='section' bindtap='contract'>
+        <text>联系我们</text>
+      </view>
+    </view>
+    <!-- <view class='bottom'bindtap='yijian'>
+      <text>意见和反馈</text>
+    </view>
+    <view class='bottom up'bindtap="contract">
+      <text>联系我们</text>
+    </view> -->
+</view>
+<text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+
+      

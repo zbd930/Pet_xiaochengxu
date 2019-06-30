@@ -1,0 +1,25 @@
+ <view class='main' >
+    <view  class="contact_top">
+      <text>联系我们</text>
+    </view>
+
+    <!-- 正文 -->
+    <view class='zhenwen'>
+        <image src='http://duogesi.cn:8080/pet/pics/Logo.png'>
+        </image>
+        <text class='zhenwen_text'>{{intruduction1}}
+        </text>
+        <text class='zhenwen_text'>{{intruduction2}}
+        </text>
+        <text class='zhenwen_text'>{{intruduction3}}
+        </text>
+        <text class='zhenwen_text tell'>联系电话 13538011946/13631622823
+        </text>
+    </view>
+</view>
+<text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+
+
+

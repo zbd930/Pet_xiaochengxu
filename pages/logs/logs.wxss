@@ -1,0 +1,96 @@
+/* Logs */
+page{
+   width: 100%;
+   height: 100%;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.lunbo{
+  width: 100%;
+  height: 100%;
+}
+.daohang{
+  display:flex; 
+  justify-content:center; 
+  margin-top: 40rpx;
+  width: 100%;
+}
+.back{
+  position: absolute ;
+  height: 100%;
+  width: 100%;
+}
+.options image{
+  margin-left:15rpx;
+}
+.options_image{
+ width: 80rpx;
+  height: 90rpx;
+}
+
+.options{
+  margin-left: 75rpx;
+  width: 180rpx;
+  height: 250rpx;
+}
+.options text{
+ font-size:28rpx ;
+}
+.out {
+  background: #ddd;
+  padding: 20px 10px;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+/*设置行内块*/
+.menu{
+  background: white;
+  margin-top: 100rpx;
+}
+.out  .inner {
+ width: 350rpx;
+  height: 320rpx;
+  background: white;
+  display: inline-block;
+  margin-right: -15rpx;
+  
+}
+.inner image{
+   width: 280rpx;
+  height: 260rpx;
+  border: 0px solid #000000;
+  border-radius: 10px;
+}
+/* 页面 */
+.bottom{
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 15%;
+}
+.btn{
+  position: relative;
+  width: 40%;
+  background: none;
+  border:1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn image{
+  vertical-align:bottom;
+  width: 100%;
+}
+.file_text{
+  position: absolute;
+  margin-left:-120px;
+  margin-top:12px;
+  font-size:13px;
+}

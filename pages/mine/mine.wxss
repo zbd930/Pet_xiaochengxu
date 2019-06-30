@@ -1,0 +1,130 @@
+/* pages/mine/mine.wxss */
+page{
+  width: 100%;
+  min-height:100%;
+}
+.page-body-info {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  height: 150rpx;
+   background-color: #000000;
+}
+.userinfo-avatar {
+  border-radius: 500rpx;
+  width: 140rpx;
+  height: 130rpx;
+}
+.userinfo-nickname {
+  color: #f0f0f0;
+  font-size:28rpx;
+  width: 440rpx;
+}
+.user_name{
+  height: 128rpx;
+  width: 240rpx;
+  line-height: 128rpx;
+  margin-left:30rpx;
+}
+.dengji{
+  width: 200rpx;
+  height: 70rpx;
+  background: #f0f0f0;
+  margin-left: 180rpx;
+  margin-top:5%;
+  text-align: center;
+  border-radius: 100rpx;
+}
+.dengji text{
+  font-size:20rpx;
+}
+/* 我的订单 */
+.my_order{
+  width: 100%;
+  height: 55rpx;
+  text-align: center;
+}
+.my_order text{
+  color: #000000;
+  font-size: 13px;
+}
+
+
+/* 我的 */
+.my{
+  margin-top:60rpx;
+}
+.section{
+  background: #000000;
+  height: 70rpx;
+  width: 150rpx;
+  font-size:13px;
+  color: #f0f0f0;
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+  margin-left:150rpx;
+}
+.options{
+  width: 100%;
+  height: 280rpx;
+  
+}
+/* .options view:nth-child(1){
+  margin-left: 12%;
+} */
+/* .options view:nth-child(2){
+  text-indent: 15rpx;
+} */
+/* .options view:nth-child(3){
+  margin-left: 12%;
+} */
+.options view{
+  text-indent: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 280rpx;
+  margin-left:12%;
+}
+.layout_vertical image{
+  width: 80rpx;
+  height: 90rpx;
+  margin-left:10%;
+}
+.layout_vertical text{
+  margin-top:10rpx;
+  font-size: 13px;
+}
+.layout_vertical{
+  width: 120rpx;
+  height: 10rpx;
+  padding-bottom:0px; 
+}
+.add_address{
+  height: 150rpx;
+  padding-left: 5%;
+  padding-top:5%;
+}
+.add_address image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.add_address text{
+  margin-left: 3%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.bottom{
+  background: #000000;
+  color: #fff;
+  padding: 3rpx;
+}
+.bottom text{
+  font-size: 13px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
