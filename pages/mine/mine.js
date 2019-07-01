@@ -9,17 +9,17 @@ Page({
     level:"A",
     xiangmu:[{
       "image_url":
-      "http://duogesi.cn:8080/pet/pics/servicing.png",
+      "https://duogesi.cn:8080/pet/pics/servicing.png",
        "text":"服务中",
        "number":"1"
     },
       {
-        "image_url": "http://duogesi.cn:8080/pet/pics/appraise.png",
+        "image_url": "https://duogesi.cn:8080/pet/pics/appraise.png",
         "text": "待评价",
         "number": "2"
       },
       {
-        "image_url": "http://duogesi.cn:8080/pet/pics/complete.png",
+        "image_url": "https://duogesi.cn:8080/pet/pics/complete.png",
         "text": "已完成",
         "number": "3"
       },

@@ -3,7 +3,7 @@
     <view class="contact_top">狗狗档案</view>
 
     <view class='top'>
-        <image class='top'src='http://duogesi.cn:8080/pet/pics/xiadan.jpg'></image>
+        <image class='top'src='https://duogesi.cn:8080/pet/pics/xiadan.jpg'></image>
     </view>
     <!-- 宠物照片 -->
       <!-- <view class='layout_horizontal biankuan' bindtap='uploadPhoto'>

@@ -36,10 +36,10 @@
             <!-- 星星 -->
                     <view class='block'>
                         <block wx:for="{{one_2}}" wx:key="index" >
-                              <image class='image'catchtap='in_xin' id='{{index+1}}' data-in='star' src='http://duogesi.cn:8080/pet/pics/star-active.png'></image>
+                              <image class='image'catchtap='in_xin' id='{{index+1}}' data-in='star' src='https://duogesi.cn:8080/pet/pics/star-active.png'></image>
                           </block>
                           <block wx:for="{{two_2}}" wx:key="index">
-                              <image class='image' catchtap='in_xin' id='{{index+1}}' data-in='starg' src='http://duogesi.cn:8080/pet/pics/star.png'></image>
+                              <image class='image' catchtap='in_xin' id='{{index+1}}' data-in='starg' src='https://duogesi.cn:8080/pet/pics/star.png'></image>
                           </block>
                         <view>{{sentence}}</view>
                     </view>

@@ -193,7 +193,7 @@ Page({
     })
     if (this.data.one_2 != "" && this.data.service != "" && this.data.date != "" && this.data.postid != "") {
       wx.request({
-        url: 'http://duogesi.cn:8080/pet/congcong/commentaction_execute.action',
+        url: 'https://duogesi.cn:8080/pet/congcong/commentaction_execute.action',
         method: 'POST',
         data: {
           one_2: this.data.one_2,

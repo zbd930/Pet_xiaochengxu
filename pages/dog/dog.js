@@ -91,7 +91,7 @@ Page({
     })
     if (this.data.dogName !== "" && this.data.category !== "" && this.data.sex !== "" && app.globalData.openid!=""){ 
         wx.request({
-          url: 'http://duogesi.cn:8080/pet/congcong/dogaction_execute.action',
+          url: 'https://duogesi.cn:8080/pet/congcong/dogaction_execute.action',
               data: {
                 dogsex:this.data.sex,
                 dogName: this.data.dogName,

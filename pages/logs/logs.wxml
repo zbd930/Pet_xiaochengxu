@@ -22,19 +22,19 @@
     
     <view class='layout_horizontal daohang' >
         <view class='layout_vertical options'bindtap='process'>
-                <image src='http://duogesi.cn:8080/pet/pics/process.png' class="options_image" />
+                <image src='https://duogesi.cn:8080/pet/pics/process.png' class="options_image" />
                 <text class='text_size'>
                   服务流程
                 </text>
         </view>
         <view class='layout_vertical options'bindtap='charging'>
-                <image src='http://duogesi.cn:8080/pet/pics/charging.png' class="options_image"/>
+                <image src='https://duogesi.cn:8080/pet/pics/charging.png' class="options_image"/>
                 <text class='text_size'>
                 收费标准
                 </text>
         </view>
         <view class='layout_vertical options' bindtap='contact'>
-                <image src='http://duogesi.cn:8080/pet/pics/contract1.png' class="options_image"/>
+                <image src='https://duogesi.cn:8080/pet/pics/contract1.png' class="options_image"/>
                 <text class='text_size  '>
                 联系我们
                 </text>

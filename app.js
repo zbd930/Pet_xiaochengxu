@@ -40,7 +40,7 @@ App({
    getOpenId: function (code) {
     var that=this;
     wx.request({
-      url: 'http://duogesi.cn:8080/pet/congcong/wechataction_getopenid.action',
+      url: 'https://duogesi.cn:8080/pet/congcong/wechataction_getopenid.action',
       data: {
         code: code,
       },
@@ -49,7 +49,7 @@ App({
         that.globalData.openid = res.data.openid;
         var zhonglei = [];
         wx.request({
-          url: 'http://duogesi.cn:8080/pet/congcong/bathingaction_query.action',
+          url: 'https://duogesi.cn:8080/pet/congcong/bathingaction_query.action',
           method: 'GET',
           data: {
             user_Name: res.data.openid,
@@ -85,7 +85,7 @@ App({
     var zhonglei = [];
     var that=this;
     wx.request({
-      url: 'http://duogesi.cn:8080/pet/congcong/bathingaction_query.action',
+      url: 'https://duogesi.cn:8080/pet/congcong/bathingaction_query.action',
       method: 'GET',
       data: {
         user_Name: openid,

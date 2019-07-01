@@ -7,12 +7,12 @@
   <view class="biaoti layout_horizontal">
       <view class="biaoti1">
             <text>清洗</text>
-            <image src='http://duogesi.cn:8080/pet/pics/shower1.png' class='qingxi'>
+            <image src='https://duogesi.cn:8080/pet/pics/shower1.png' class='qingxi'>
             </image>
       </view>
       <view class="biaoti2">
             <text>寄养</text>
-            <image src='http://duogesi.cn:8080/pet/pics/service.png' class='qingxi'>
+            <image src='https://duogesi.cn:8080/pet/pics/service.png' class='qingxi'>
             </image>
       </view>
   </view>

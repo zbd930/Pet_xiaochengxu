@@ -5,7 +5,7 @@
 
     <!-- 正文 -->
     <view class='zhenwen'>
-        <image src='http://duogesi.cn:8080/pet/pics/Logo.png'>
+        <image src='https://duogesi.cn:8080/pet/pics/Logo.png'>
         </image>
         <text class='zhenwen_text'>{{intruduction1}}
         </text>

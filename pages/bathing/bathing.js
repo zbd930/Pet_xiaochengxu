@@ -85,7 +85,7 @@ Page({
   bindPickerChange_pet(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      image_url:'http://duogesi.cn:8080/pet/pics/dog2.png',
+      image_url:'https://duogesi.cn:8080/pet/pics/dog2.png',
       dogName: this.data.category[e.detail.value]
     })
   },
@@ -110,7 +110,7 @@ Page({
     // this.paypay(that, app.globalData.openid)
     if (this.data.contact_name !== "" && this.data.contact_phone !== "" && this.data.contact_addree !== "" && this.data.dogName !== "" && this.data.dogName !== "第一次下单请先建立宠物档案"&& this.data.price !== "" && this.data.date !== "" && this.data.time !== "" && app.globalData.openid != "") {
       wx.request({
-        url: 'http://duogesi.cn:8080/pet/congcong/bathingaction_execute.action',
+        url: 'https://duogesi.cn:8080/pet/congcong/bathingaction_execute.action',
         data: {
           contact_name: this.data.contact_name,
           contact_phone: this.data.contact_phone,
@@ -145,7 +145,7 @@ Page({
           wx.showToast({
             title: '网络连接失败',
 
-            image: 'http://duogesi.cn:8080/pet/pics/fail.png',
+            image: 'https://duogesi.cn:8080/pet/pics/fail.png',
 
             duration: 2000
 
@@ -168,7 +168,7 @@ Page({
   paypay: function (that) {
     console.log(app.globalData.openid)
     wx.request({
-      url: 'http://duogesi.cn:8080/pet/congcong/wechataction_getopenid.action',
+      url: 'https://duogesi.cn:8080/pet/congcong/wechataction_getopenid.action',
       data: {
         openid: app.globalData.openid,
         
@@ -205,7 +205,7 @@ Page({
     var zhonglei = [];
     var first=[];
     wx.request({
-      url: 'http://duogesi.cn:8080/pet/congcong/dogaction_preload.action',
+      url: 'https://duogesi.cn:8080/pet/congcong/dogaction_preload.action',
       method: 'GET',
       header: {
         //'content-type': 'application/json' // 默认值

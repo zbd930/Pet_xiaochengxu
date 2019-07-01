@@ -3,7 +3,7 @@
   <view  class="contact_top">
         <text>服务流程</text>
       </view>
-    <image class='pic'src='http://duogesi.cn:8080/pet/pics/service_process.png'>
+    <image class='pic'src='https://duogesi.cn:8080/pet/pics/service_process.png'>
     </image>
 </view> 
 <text class='bottom_text'>

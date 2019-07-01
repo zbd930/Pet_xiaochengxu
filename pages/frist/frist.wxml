@@ -1,5 +1,5 @@
 <!--pages/frist/frist.wxml-->
 <text>欢迎登陆</text>
-<image src='http://duogesi.cn:8080/pet/pics/Logo.png' lazy-load='{{ture}}'>
+<image src='https://duogesi.cn:8080/pet/pics/Logo.png' lazy-load='{{ture}}'>
 </image>
 <!-- <button>手动跳转</button> -->
