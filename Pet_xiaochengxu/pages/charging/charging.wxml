@@ -1,0 +1,42 @@
+<!--pages/intruduction/intruduction.wxml-->
+<view class='main'>
+  <view  class="contact_top">
+      <text>收费标准</text>
+    </view>
+    <!-- 标题黑框 -->
+  <view class="biaoti layout_horizontal">
+      <view class="biaoti1">
+            <text>清洗</text>
+            <image src='https://duogesi.cn/pet/pics/shower1.png' class='qingxi'>
+            </image>
+      </view>
+      <view class="biaoti2">
+            <text>寄养</text>
+            <image src='https://duogesi.cn/pet/pics/service.png' class='qingxi'>
+            </image>
+      </view>
+  </view>
+  <!-- 主页面 -->
+    <view class='layout_horizontal menu'>
+        <view class='op'>
+        <text >基础清洁</text>
+        </view>
+        <view class='option op'>
+        <text >深度清洁</text>
+        </view>
+    </view>
+    <block wx:for="{{xiangmu}}" wx:key="{{xiangmu1}}">
+      <view class='layout_horizontal xiangmu_title '>
+          <view class='xiangmu'>
+                {{item.xiangmu1}}
+          </view>
+          <text>{{item.xiangmu2}}
+          </text>
+          <text>{{item.xiangmu3}}
+          </text>
+      </view>
+    </block> 
+</view>
+    <text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>

@@ -1,0 +1,62 @@
+/**app.wxss**/
+.contact_top{
+  width: 100%;
+  margin-top:5%;
+  font-size: 15px;
+  text-align: center;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.layout_horizontal{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+.text_size{
+  font-size:13px;
+}
+/*纵向布局  */
+.layout_vertical{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+/*划线  */
+.line {
+   background-color: blue;
+   height: 2rpx;
+   width: 100%;
+}
+.main{
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height:100%;
+  margin-bottom: 60rpx;
+}
+.bottom_text{
+    position: fixed;
+    bottom: 10rpx;
+    right: 0;
+    left:18%;
+    justify-content: center; 
+    font-size: 28rpx;
+    color:grey;
+}
+.xiala{
+  position: absolute;
+  right:11%;
+  bottom: 20%;
+}
+
+
+

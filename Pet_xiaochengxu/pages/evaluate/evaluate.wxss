@@ -1,0 +1,236 @@
+/* pages/evaluate/evaluate.wxss */
+page{
+  width: 100%;
+  min-height:100%;
+}
+.page-body-info {
+  padding: 30rpx;
+  margin-top: 20rpx;
+  height: 140rpx;
+   background-color: #000000;
+}
+.userinfo-avatar {
+  border-radius: 200rpx;
+  width: 130rpx;
+  height: 128rpx;
+}
+.userinfo-nickname {
+  color: #f0f0f0;
+  font-size:28rpx;
+  width: 240rpx;
+}
+.user_name{
+  height: 128rpx;
+  width: 240rpx;
+  line-height: 128rpx;
+  margin-left:30rpx;
+}
+.dengji{
+  width: 200rpx;
+  height: 70rpx;
+  background: #f0f0f0;
+  margin-left: 180rpx;
+  margin-top:5%;
+  text-align: center;
+  border:0px solid ;
+  border-radius: 50rpx;
+}
+.dengji text{
+  font-size:20rpx;
+}
+/* 评论 */
+.comments{
+  margin: 10%;
+  width: 80%;
+  height: 300rpx;
+  border: 1px;
+  border-style: solid;
+  font-size: 30rpx;
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  margin-bottom: 20rpx;
+}
+.comments text{
+  border: 1px;
+  width: 120rpx;
+  background: #000000;
+  color: #fff;
+  border-style: solid;
+  padding: 10rpx;
+}
+.xingjipingjia{
+  position: absolute;
+  top:550rpx;
+  left: 300rpx;
+  border: 1px;
+  width: 160rpx;
+  border-style: solid;
+}
+.comments button{
+  background: #000000;
+  color: #fff;
+}
+.comments_2{
+  margin: 10%;
+  width: 80%;
+  height: 150rpx;
+  border: 1px;
+  border-style: solid;
+  font-size: 30rpx;
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.radio-group{
+  margin-top: 20rpx;
+}
+.comments_2 view{
+  margin-top:30rpx;
+  font-size: 30rpx;
+  border: 1px;
+  align-content:center;
+  line-height: 50rpx;
+  border-style: solid;
+  height: 50rpx;
+  width: 200rpx;
+  margin-left: 65rpx;
+  
+}
+/* 弹框 */
+.element-wrapper {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.checkbox{
+  display:inline-block;
+  margin:10rpx;
+  padding:6rpx;
+  background:#eee;
+  border-radius: 4rpx;
+
+}
+.checkedActive{
+  background:red;
+  color:#fff;
+}
+.my_comments{
+   width: 200rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+ text-align: center;
+font-size: 30rpx;
+}
+.background {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.iconusecont-div {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.flex-item {
+  display: inline-block; 
+  text-align: center; 
+  cursor: pointer;
+  margin:10rpx;
+  padding:6rpx;
+  background:#eee;
+  border-radius: 4rpx;
+}
+
+.use_name {
+  width: 200rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+ text-align: center;
+ font-size: 30rpx;
+}
+
+.active-tag .flex-item {
+  background:red;
+  color: #fff;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+
+.element {
+  padding-left:22rpx;
+  position: fixed;
+  width: 100%;
+  height: 57vh;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.element text {
+  color: #999;
+  display: inline-flex;
+  position: fixed;
+  margin-top: 20rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.element .left-bt {
+  left: 5%;
+ font-size: 30rpx;
+  color: #888;
+  line-height: 34rpx;
+}
+
+.element .right-bt {
+  right: 5%;
+  font-size: 30rpx;
+  color: #888;
+  text-align: right;
+  line-height: 34rpx;
+}
+
+.element .line {
+  display: block;
+  position: fixed;
+  height: 1px;
+  width: 100%;
+  margin-top: 89rpx;
+  background-color: #eee;
+}
+.tijiao{
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top:10rpx;
+}
+/* 星星 */
+.block{
+  margin-left:240rpx;
+}
+.image{ 
+  margin-top:140rpx;
+ height: 55rpx; 
+ width: 55rpx; 
+ display: inline-block
+}

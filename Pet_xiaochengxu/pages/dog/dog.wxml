@@ -1,0 +1,69 @@
+<!--pages/dog/dog.wxml-->
+<view class='main'>
+    <view class="contact_top">狗狗档案</view>
+
+    <view class='top'>
+        <image class='top'src='https://duogesi.cn/pet/pics/xiadan.jpg'></image>
+    </view>
+    <!-- 宠物照片 -->
+      <!-- <view class='layout_horizontal biankuan' bindtap='uploadPhoto'>
+          <text>宠物照片:</text>
+          <image class='image_add' src="{{imageUrl}}"></image>
+      </view> -->
+      <view class='middle'>
+    <!-- 宠物昵称 -->
+      <view class='layout_horizontal biankuan'>
+          <text>宠物昵称*:</text>
+          <input name='dogname' bindinput='dogNameInput'hint="请输入昵称"></input>
+      </view>
+      <!-- 宠物性别 -->
+      <view class='layout_horizontal biankuan'>
+          <text>宠物性别*:</text>
+          <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}"  />
+                {{item.value}}
+              </label>
+          </radio-group>
+      </view>
+    <!-- 宠物体重 -->
+      <view class='layout_horizontal biankuan'>
+          <text>宠物体重:</text>
+          <input name='dogweight' bindinput='dogweightInput'placeholder="单位为KG"></input>
+      </view>
+      <!-- 宠物生日 -->
+      <view class='layout_horizontal biankuan'>
+          <text>宠物生日:</text>
+          <picker
+        mode="date"
+        value="{{dogbirthday}}"
+        start="2000-01-01"
+        end="2019-12-01"
+        bindchange="dogbirthday"
+      >
+      <view class="picker">
+                    {{dogbirthday}} 
+                      <text class='xiala'>▼</text>
+                  </view>
+      </picker>
+          <!-- <input name='dogbirthday' bindinput='dogbirthday'hint="XX月XX日"></input> -->
+      </view>
+      <!-- 宠物种类 -->
+      <view class='layout_horizontal biankuan biankuan1'>
+          <text>宠物种类*:</text>
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                      {{array[index]}} 
+                      <text class='xiala'>▼</text>
+                  </view>
+      
+              </picker>
+      </view>
+      
+        <text class="comfirm hide{{showView?'':'show'}}">*号为必填项</text>
+        <button bindtap='loginBtnClick'>提交</button>
+    </view> 
+</view>
+     <text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+    </text>

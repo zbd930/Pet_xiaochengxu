@@ -1,0 +1,75 @@
+<!--logs.wxml-->
+<view class='main' >
+    <swiper indicator-dots="{{indicatorDots}}"  
+
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+
+            <block wx:for="{{imgUrls}}" wx:key='item'>  
+
+              <swiper-item>  
+
+                  <!-- //<navigator url="{{item.link}}" >   -->
+
+                  <image src="{{item.url}}" class="lunbo" lazy-load='ture'/>  
+
+                  <!-- </navigator>   -->
+
+              </swiper-item>  
+
+            </block>  
+
+    </swiper>  
+    
+    <view class='layout_horizontal daohang' >
+        <view class='layout_vertical options'bindtap='process'>
+                <image src='https://duogesi.cn/pet/pics/process.png' class="options_image" />
+                <text class='text_size'>
+                  服务流程
+                </text>
+        </view>
+        <view class='layout_vertical options'bindtap='charging'>
+                <image src='https://duogesi.cn/pet/pics/charging.png' class="options_image"/>
+                <text class='text_size'>
+                收费标准
+                </text>
+        </view>
+        <view class='layout_vertical options' bindtap='contact'>
+                <image src='https://duogesi.cn/pet/pics/contract1.png' class="options_image"/>
+                <text class='text_size  '>
+                联系我们
+                </text>
+        </view>
+    </view>
+    <!-- 选项 -->
+      
+    <view class='out menu'>
+            <scroll-view scroll-x scroll-into-view='item2'>
+                <view class='inner' bindtap="xiadan">
+                      <image src='../../libs/pics/clean.png' class='bg' mode='widthFix' lazy-load='true'/>
+                  </view>
+                <view  class='inner' bindtap='dog_file'>
+                      <image src='../../libs/pics/dog.png'  mode='widthFix' lazy-load='ture'/>
+                  </view>
+                  <view class='inner' bindtap="jiyang">
+                              <image src='../../libs/pics/foster.png'  mode='widthFix' lazy-load='ture'/>
+                  </view>
+            </scroll-view>
+        
+    </view>
+           
+</view>
+    <text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+    
+   
+    
+  
+ 
+
+
+
+
+  
+ 
+

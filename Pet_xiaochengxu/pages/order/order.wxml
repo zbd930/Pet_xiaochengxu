@@ -1,0 +1,123 @@
+<!--pages/order/order.wxml-->
+<view class='main'>
+  <view class="movie-container" >
+  <!-- 导航栏 -->
+  <view class="navbar">
+    <block wx:for="{{navbarTitle}}" wx:key="index">
+      <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="movie-content-wrapper">
+    <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish" >
+    <!-- 全部 -->
+      <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height:100%;" > 
+           <view class='items_div bg-g' wx:for="{{listData}}" wx:key="{{Create_Date}}">
+              编号:{{item.number}}
+                <view >
+                      狗狗姓名：{{item.dogName}}
+                      日期：{{item.date}}
+                     
+                </view>
+                <view>
+                类型：{{item.category}}
+                金额：{{item.price}}
+                </view>
+             </view>
+             
+            </scroll-view>
+      </swiper-item>
+      <!-- 服务中 -->
+      <swiper-item >
+        <scroll-view scroll-y="{{true}}" style="height:100%;"> 
+           <view class='items_div bg-g' wx:if="{{item.status==0}}" wx:for="{{listData}}" wx:key="{{Create_Date}}">
+              编号:{{item.number}}
+                <view >
+                      狗狗姓名：{{item.dogName}}
+                      日期：{{item.date}}
+                     
+                </view>
+                <view>
+                     类型：{{item.category}}
+                     金额：{{item.price}}
+                </view>
+             </view>
+             
+            </scroll-view>
+      </swiper-item>
+      <!-- 待评价 -->
+      <swiper-item >
+        <scroll-view scroll-y="{{true}}" style="height:100%;"> 
+           <view class='items_div bg-g' wx:if="{{item.status==1}}" wx:for="{{listData}}" wx:key="{{Create_Date}}">
+              编号:{{item.number}}
+                <view >
+                      <view >
+                      狗狗姓名：{{item.dogName}}
+                      日期：{{item.date}}
+                          
+                      </view>
+                      <view>
+                          类型：{{item.category}}
+                          金额：{{item.price}}
+                      </view>
+                </view>
+                <button bindtap='pingfen' data-name='{{item.comments}}'  data-id='{{item.date}}' data-postid='{{item.ID}}'>点击评价</button>
+             </view>
+             
+            </scroll-view>
+      </swiper-item>
+       <swiper-item >
+        <scroll-view scroll-y="{{true}}" style="height:100%;">  
+           <view class='items_div bg-g' wx:if="{{item.status==2}}" wx:for="{{listData}}" wx:key="{{Create_Date}}">
+              编号:{{item.number}}
+                      <view >
+                      <view >
+                      狗狗姓名：{{item.dogName}}
+                      日期：{{item.date}}
+                      </view>
+                      <view>
+                          类型：{{item.category}}
+                          金额：{{item.price}}
+                      </view>
+                </view>
+             </view>
+            </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+
+  <!-- <view class="contact_top">我的订单</view>
+
+  <view class="table" >
+    <view class="tr bg-w">
+      <view class="th">全部</view>
+      <view class="th">日期</view>
+      <view class="th ">服务中</view>
+      <view class="th " bindtap='pingfen'>待评价</view>
+      <view class="th ">已完成</view>
+    </view>
+    <block wx:for="{{listData}}" wx:key="{{Create_Date}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}" bindtap='j1'>
+        <view class="td">{{item.code}}</view>
+        <view class="td">{{item.date}}</view>
+        <view class="td">{{item.setvicing}}</view>
+        <view class="td" bindtap='pingfen'   data-postid='{{item.ID}}' data-name='{{item.comments}}' data-id='{{item.date}}'>{{item.comments}}</view>
+        <view class="td">{{item.finished}}</view>
+      </view>
+      <view class="tr" wx:else>
+      <view class="td">{{item.code}}</view>
+        <view class="td">{{item.date}}</view>
+        <view class="td">{{item.setvicing}}</view>
+        <view class="td" bindtap='pingfen'data-name='{{item.comments}}'  data-id='{{item.date}}' data-postid='{{item.ID}}'>{{item.comments}}</view>
+        <view class="td">{{item.finished}}</view>
+      </view>
+    </block>
+  </view> -->
+</view>
+<text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>

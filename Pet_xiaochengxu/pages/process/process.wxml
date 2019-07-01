@@ -1,0 +1,13 @@
+<!--pages/charging/charging.wxml-->
+<view class='main'>
+  <view  class="contact_top">
+        <text>服务流程</text>
+      </view>
+    <image class='pic'src='https://duogesi.cn/pet/pics/service_process.png'>
+    </image>
+</view> 
+<text class='bottom_text'>
+         定义爱宠生活新方式，遇见所有的不可能
+</text>
+
+
